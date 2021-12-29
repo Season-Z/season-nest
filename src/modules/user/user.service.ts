@@ -3,9 +3,9 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { getRepository, Repository } from 'typeorm';
 import * as argon2 from 'argon2';
 import * as jwt from 'jsonwebtoken';
+import { SECRET } from '@utils/config';
 import { BaseUserDto, UserTokenDto } from './user.dto';
 import { UserEntity } from './user.entity';
-import { SECRET } from '../../utils/config';
 // import { CRYPTO_SECRET } from '../utils/config';
 
 @Injectable()

@@ -4,13 +4,13 @@ import {
   NestModule,
   RequestMethod,
 } from '@nestjs/common';
-import { ArticleController } from './article.controller';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { AuthMiddleware } from '@middleware/auth.middleware';
+import { ArticleController } from './article.controller';
 import { ArticleEntity } from './article.entity';
 import { CommentEntity } from './comment.entity';
 import { UserEntity } from '../user/user.entity';
 import { ArticleService } from './article.service';
-import { AuthMiddleware } from '../../middleware/auth.middleware';
 import { UserModule } from '../user/user.module';
 
 @Module({

@@ -1,0 +1,24 @@
+{
+  "presets": [
+    "next/babel"
+  ],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "@config": "./src/config",
+          "@decorator": "./src/decorator",
+          "@filters": "./src/filters",
+          "@guard": "./src/guard",
+          "@interceptors": "./src/interceptors",
+          "@middleware": "./src/middleware",
+          "@modules": "./src/modules",
+          "@pipe": "./src/pipe",
+          "@tools": "./src/tools",
+          "@utils": "./src/utils"
+        }
+      }
+    ]
+  ]
+}

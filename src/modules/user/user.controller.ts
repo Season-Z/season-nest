@@ -13,11 +13,11 @@ import {
   ApiResponse,
   ApiTags,
 } from '@nestjs/swagger';
-import { UserDecorator } from '../../decorator/user.decorator';
+import { UserDecorator } from '@decorator/user.decorator';
+import { ValidationPipe } from '@pipe/validation.pipe';
 import { BaseUserDto } from './user.dto';
 import { UserEntity } from './user.entity';
 import { UserService } from './user.service';
-import { ValidationPipe } from '../../pipe/validation.pipe';
 
 @ApiBearerAuth()
 @ApiTags('user')
