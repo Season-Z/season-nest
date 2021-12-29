@@ -18,7 +18,7 @@ import { ArticleService } from './article.service';
 import { CreateArticleDto, CreateCommentDto } from './dto';
 import { ArticlesRO, ArticleRO } from './article.interface';
 import { CommentsRO } from './article.interface';
-import { UserDecorator } from '../user/user.decorator';
+import { UserDecorator } from '../../decorator/user.decorator';
 
 @ApiBearerAuth()
 @ApiTags('articles')

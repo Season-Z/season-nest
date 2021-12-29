@@ -10,7 +10,7 @@ import { ArticleEntity } from './article.entity';
 import { CommentEntity } from './comment.entity';
 import { UserEntity } from '../user/user.entity';
 import { ArticleService } from './article.service';
-import { AuthMiddleware } from '../middleware/auth.middleware';
+import { AuthMiddleware } from '../../middleware/auth.middleware';
 import { UserModule } from '../user/user.module';
 
 @Module({

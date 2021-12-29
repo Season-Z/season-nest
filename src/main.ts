@@ -19,7 +19,7 @@ async function bootstrap() {
   app.useGlobalInterceptors(new TransformInterceptor());
 
   const options = new DocumentBuilder()
-    .setTitle('zhouxishun')
+    .setTitle('season')
     .setDescription('API description')
     .setVersion('1.0')
     .setBasePath('api')
